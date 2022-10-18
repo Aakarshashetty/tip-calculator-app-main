@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -18,15 +19,16 @@
 
   <section class="splitter">
     <label>Bill
-      <input type="text" placeholder="$                                         0"/ class="bill">
+      <input type="text" placeholder="$                                         0"class="bill"/>
     </label>
+    <label>Select Tip %</label>
     <div class="tip-buttons">
-      <label>Select Tip %</label>
-      <button>5%</button>
-      <button>10%</button>
-      <button>15%</button>
-      <button>25%</button>
-      <button>50%</button>
+      
+      <button class="five" value="5">5%</button>
+      <button class="ten" value="10">10%</button>
+      <button class="fifteen" value="15">15%</button>
+      <button class="twentyfive" value="25">25%</button>
+      <button class="fifty" value="50">50%</button>
       <input type="text" placeholder="custom" class="custom"/>
     </div> 
     <label>Number of People
@@ -45,4 +47,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script src="app.js"></script>
 </html>

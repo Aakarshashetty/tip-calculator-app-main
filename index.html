@@ -18,27 +18,31 @@
 <body>
 
   <section class="splitter">
-    <label>Bill
-      <input type="text" placeholder="$                                         0"class="bill"/>
-    </label>
-    <label>Select Tip %</label>
-    <div class="tip-buttons">
-      
-      <button class="five" value="5">5%</button>
-      <button class="ten" value="10">10%</button>
-      <button class="fifteen" value="15">15%</button>
-      <button class="twentyfive" value="25">25%</button>
-      <button class="fifty" value="50">50%</button>
-      <input type="text" placeholder="custom" class="custom"/>
-    </div> 
-    <label>Number of People
-      <input type="text" placeholder="                                           0" class="people" />
-    </label>
-    <div class="amount">
-      <p>Tip Amount / person <span class="tip-amount">$0.00</span></p>
-      <p>Total / person <span class="tot-amount">$0.00</span></p>
-      <button class="reset">Reset</button>
+    <div class="left">
+      <label>Bill
+        <input type="text" placeholder="$                                         0" class="bill" />
+      </label>
+      <label>Select Tip %</label>
+      <div class="tip-buttons">
+        <button class="five" value="5">5%</button>
+        <button class="ten" value="10">10%</button>
+        <button class="fifteen" value="15">15%</button>
+        <button class="twentyfive" value="25">25%</button>
+        <button class="fifty" value="50">50%</button>
+      </div>
+      <input type="text" placeholder="custom" class="custom" />
+      <label>Number of People <p class="error"></p>
+        <input type="text" placeholder="                                           0" class="people" />
+      </label>
     </div>
+    <div class="right">
+      <div class="amount">
+        <p>Tip Amount / person <span class="tip-amount">$0.00</span></p>
+        <p>Total / person <span class="tot-amount">$0.00</span></p>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+    
   </section>
   
   

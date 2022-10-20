@@ -1,3 +1,63 @@
-.amount{
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root{
+    --strongCyan: hsl(172, 67%, 45%);
+    --veryDarkCyan: hsl(183, 100%, 15%);
+    --darkGrayishCyan: hsl(186, 14%, 43%);
+    --grayishCyan: hsl(184, 14%, 56%);
+    --lightGrayishCyan: hsl(185, 41%, 84%);
+    --veryLightGrayishCyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    margin: 10% 0%;
+    font-family: 'Space Mono', monospace;
+    background-color: var(--veryLightGrayishCyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+}
+.splitter{
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
     
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+h2{
+    padding-bottom: 1rem;
+}
+.amount{
+    border: 2px solid var(--veryDarkCyan);
+    background-color: var(--veryDarkCyan);
+    padding: 1rem 1rem;
+    margin: 5px;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 12px;
+}
+.person{
+   display: flex;
+}
+.tip-amount{
+    display: inline-block;
+    margin-left: 130px;
+    padding-right: 1.5rem;
+    font-size: 28px;
 }

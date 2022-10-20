@@ -15,7 +15,7 @@ p{
 }
 body{
     padding: 0;
-    margin: 10% 0%;
+    margin: 5% 0%;
     font-family: 'Space Mono', monospace;
     background-color: var(--veryLightGrayishCyan);
     display: flex;
@@ -34,30 +34,57 @@ body{
 .left{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0px 10px;
 }
 h2{
     padding-bottom: 1rem;
+    font-size: 30px;
 }
 .amount{
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+
+}
+.amount p{
+    font-size: 14px;
+}
+.person{
+   /* display: flex; */
+   font-size: 10.8px;
+   flex-grow: 0;
+   grid-column: 2/1;
+   
+}
+.tip-amount{
+    font-size: 28px;
+    grid-row: 1;
+    grid-column: 2;
+    
+    /* align-self: flex-end; */    
+}
+.total{
+    grid-row: 3;
+}
+.tot-amount{
+    grid-row: 3;
+    grid-column: 2;
+}
+.right{
     border: 2px solid var(--veryDarkCyan);
     background-color: var(--veryDarkCyan);
     padding: 1rem 1rem;
     margin: 5px;
     width: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 12px;
+    height: 40vh;
 }
-.person{
-   display: flex;
-}
-.tip-amount{
-    display: inline-block;
-    margin-left: 130px;
-    padding-right: 1.5rem;
-    font-size: 28px;
+.reset{
+    margin: 150px 10px;
 }

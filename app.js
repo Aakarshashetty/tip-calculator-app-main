@@ -20,6 +20,7 @@ const calculateTip = tip=>{
         calculateTotalAmountPerPerson(tipAmount/people);
     }
     else{
+        noOfPeople.classList.add(".error-msg");
         errorMsg.innerText = "Can't be zero";
     }
 };
